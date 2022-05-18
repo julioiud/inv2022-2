@@ -56,6 +56,96 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "TIPOSEQUIPOS",
+			"item": [
+				{
+					"name": "GetTiposEquiposUsuarioActivos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/tiposequipo/user-activo",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tiposequipo",
+								"user-activo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearTipoEquipo",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "GetTipoEquipoByID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/tiposequipo/62845d4995574c875e053cdd",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tiposequipo",
+								"62845d4995574c875e053cdd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ActualizaTipoEquipoByID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"móviles\",\r\n    \"estado\": true,\r\n    \"usuario\": {\r\n        \"email\": \"julio@gmail.com\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/tiposequipo/62845d4995574c875e053cdd",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tiposequipo",
+								"62845d4995574c875e053cdd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BorrarTipoEquipoByID",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
