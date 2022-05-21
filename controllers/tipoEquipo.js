@@ -6,7 +6,6 @@ const Usuario = require('../models/usuario');
 /**
  * Consultar todos tipos de equipo activos con usuario activo
  */
-
 const getTiposEquipoUserActivo = async (req, res = response) => {
     const query = { estado: true}; // estado del equipo
     let tiposEquipoBD = await TipoEquipo.find(query).populate({
