@@ -2,14 +2,12 @@ const { Router } = require('express');
 
 const router = Router();
 
-const { createUsuario } = require('../controllers/usuario');
+const { getUsuarios, createUsuario } = require('../controllers/usuario');
 
 /**
- * Obtiene todos los usuarios
+ * Obtiene todos los usuarios activos
  */
-router.get('/', (req, res) => {
-    res.json({"metodo": "obtener todos"});
-});
+router.get('/', getUsuarios);
 
 /**
  * Obtiene un usuarios por id
