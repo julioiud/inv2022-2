@@ -7,7 +7,6 @@ const { v4: uuidv4 } = require('uuid');
 const path = require('path');
 const fs = require('fs');
 
-
 /**
  * Consultar todos inventarios
  */
@@ -159,4 +158,4 @@ const getFotoById =  async (req = request, res = response) => {
     }
 }
 
-module.exports = { getInventarios, getInventarioByID, createInventario, updateInventario, uploadImage, getFotoById};
+module.exports = { getInventarios, getInventarioByID, createInventario, updateInventario, uploadImage, getFotoById };
